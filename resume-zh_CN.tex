@@ -4,59 +4,39 @@
 
 \documentclass{resume}
 \usepackage{zh_CN-Adobefonts_external} % Simplified Chinese Support using external fonts (./fonts/zh_CN-Adobe/)
-% \usepackage{NotoSansSC_external}
-% \usepackage{NotoSerifCJKsc_external}
-% \usepackage{zh_CN-Adobefonts_internal} % Simplified Chinese Support using system fonts
+%\usepackage{zh_CN-Adobefonts_internal} % Simplified Chinese Support using system fonts
 \usepackage{linespacing_fix} % disable extra space before next section
 \usepackage{cite}
 
 \begin{document}
 \pagenumbering{gobble} % suppress displaying page number
 
-\name{你的大名}
+\name{唐天舒}
 
 \basicInfo{
-  \email{yuanbin2014@gmail.com} \textperiodcentered\ 
-  \phone{(+86) 131-221-87xxx} \textperiodcentered\ 
-  \linkedin[billryan8]{https://www.linkedin.com/in/billryan8}}
+  \email{tstang@zju.edu.cn} \textperiodcentered\ 
+  \phone{13588076479} }
  
 \section{\faGraduationCap\  教育背景}
-\datedsubsection{\textbf{上海交通大学}, 上海}{2013 -- 至今}
-\textit{在读硕士研究生}\ 信息与通信工程, 预计 2016 年 3 月毕业
-\datedsubsection{\textbf{西安电子科技大学}, 西安, 陕西}{2009 -- 2013}
-\textit{学士}\ 通信工程
+\datedsubsection{\textbf{浙江大学}, 杭州, 浙江}{2020 -- 至今}
+\textit{在读硕士研究生}\ 软件工程, 预计 2023 年 3 月毕业
+\datedsubsection{\textbf{重庆邮电大学}, 重庆}{2016 -- 2020}
+\textit{学士}\ 计算机科学与技术
 
 \section{\faUsers\ 实习/项目经历}
-\datedsubsection{\textbf{黑科技公司} 上海}{2015年3月 -- 2015年5月}
-\role{实习}{经理: 高富帅}
-xxx后端开发
+\datedsubsection{超前预警设备云平台}{2021年6月 -- 至今}
+\role{Java 后端开发}{浙大滨江研究院合作项目}
+基于 SpringBoot 框架分别实现了设备通讯协议解析模块与云平台后台数据管理模块, 目前项目已投入 生产。带领项目团队参加华为鲲鹏应用创新大赛，获得了浙江赛区总决赛二等奖。
+个人工作内容
 \begin{itemize}
-  \item 实现了 xxx 特性
-  \item 后台资源占用率减少8\%
-  \item xxx
+  \item 根据协议文档实现设备通讯协议解析, 部署开源 MQTT 服务器 EMQX 维护设备连接
+  \item 使用 redis 作为缓存数据库，进行实时设备在线状态更新与查询，并通过 expire 指令动态设置设备
+命令延迟下发
+  \item 云平台 Mysql 数据库设备数据模块增删改查，使用了 Mybatis 作为持久层框架
+  \item 使用 SpringBoot 中 AOP 功能实现接口通信数据日志打印, 并通过自定义注解结合 AOP 实现接口
+权限控制
+  \item 通过 JWT 实现了云平台用户验证
 \end{itemize}
-
-\datedsubsection{\textbf{分布式科学上网姿势}}{2014年6月 -- 至今}
-\role{Golang, Linux}{个人项目，和富帅糕合作开发}
-\begin{onehalfspacing}
-分布式负载均衡科学上网姿势, https://github.com/cyfdecyf/cow
-\begin{itemize}
-  \item 修复了连接未正常关闭导致文件描述符耗尽的 bug
-  \item 使用Chord 哈希 URL, 实现稳定可靠地分流
-  \item xxx (尽量使用量化的客观结果)
-\end{itemize}
-\end{onehalfspacing}
-
-\datedsubsection{\textbf{\LaTeX\ 简历模板}}{2015 年5月 -- 至今}
-\role{\LaTeX, Python}{个人项目}
-\begin{onehalfspacing}
-优雅的 \LaTeX\ 简历模板, https://github.com/billryan/resume
-\begin{itemize}
-  \item 容易定制和扩展
-  \item 完善的 Unicode 字体支持，使用 \XeLaTeX\ 编译
-  \item 支持 FontAwesome 4.5.0
-\end{itemize}
-\end{onehalfspacing}
 
 % Reference Test
 %\datedsubsection{\textbf{Paper Title\cite{zaharia2012resilient}}}{May. 2015}
@@ -68,21 +48,27 @@ xxx后端开发
 \section{\faCogs\ IT 技能}
 % increase linespacing [parsep=0.5ex]
 \begin{itemize}[parsep=0.5ex]
-  \item 编程语言: C == Python > C++ > Java
-  \item 平台: Linux
-  \item 开发: xxx
+  \item 编程语言: Java, Python, C
+  \item 平台: Linux, 熟悉常用 linux 命令, 能够在 linux 上进行项目开发与部署，并使用 shell 脚本结合 CI/CD 服务进行自动运维
+  \item 数据结构与算法: 可实现快速排序，归并排序等经典算法;熟悉链表，跳表，二叉搜索树等数据结 构
+  \item JavaWeb框架:了解Spring框架设计理念，如IoC，AOP等特性，读过部分源码并了解其设计模式
+  \item 数据库:熟悉关系型数据库 Mysql，有设计数据表经验，了解索引优化、SQL 查询优化以及底层
+ 存储引擎。熟悉非关系型数据库 Redis, 了解其基本数据类型的底层实现原理
 \end{itemize}
 
 \section{\faHeartO\ 获奖情况}
-\datedline{\textit{第一名}, xxx 比赛}{2013 年6 月}
-\datedline{其他奖项}{2015}
+\datedline{\textit{银奖}, ACM-ICPC 大学生程序设计大赛四川省赛区}{2017 年4 月}
+\datedline{\textit{特等奖}, 全国大学生英语竞赛总决赛}{2017 年4 月}
+\datedline{\textit{二等奖}, 蓝桥杯全国软件和信息技术专业人才大赛全国总决赛}{2018 年10 月}
+\datedline{\textit{第二名},  CCF 大学生计算机系统与程序设计竞赛西南赛区}{2019 年4 月}
+\datedline{\textit{铜奖}, CCF 大学生计算机系统与程序设计竞赛}{2019 年10 月}
+\datedline{CCF 全国优秀大学生}{2019 年10 月}
+\datedline{国家奖学金}{2019 年12 月}
 
-\section{\faInfo\ 其他}
+\section{\faInfo\ Miscellaneous}
 % increase linespacing [parsep=0.5ex]
 \begin{itemize}[parsep=0.5ex]
-  \item 技术博客: http://blog.yours.me
-  \item GitHub: https://github.com/username
-  \item 语言: 英语 - 熟练(TOEFL xxx)
+  \item 语言: 英语 - 熟练 (CET6 607)
 \end{itemize}
 
 %% Reference
@@ -90,3 +76,4 @@ xxx后端开发
 %\bibliographystyle{IEEETran}
 %\bibliography{mycite}
 \end{document}
+
