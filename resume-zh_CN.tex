@@ -26,16 +26,16 @@
 \section{\faUsers\ 实习/项目经历}
 \datedsubsection{超前预警设备云平台}{2021年6月 -- 至今}
 \role{Java 后端开发}{浙大滨江研究院合作项目}
-基于 SpringBoot 框架分别实现了设备通讯协议解析模块与云平台后台数据管理模块, 能够对智能预警设备进行实时监控、数据分析和指令下发, 目前项目已投入 生产。带领项目团队参加华为鲲鹏应用创新大赛，获得了浙江赛区总决赛二等奖。\\ 
-个人工作内容
+项目介绍: 基于 SpringBoot 框架分别实现了设备通讯协议解析模块与云平台后台数据管理模块, 能够对智能预警设备进行实时监控、数据分析和指令下发, 根据算法为用户提供电气方面的提前预警。
+\subsection{个人负责内容}
 \begin{itemize}
   \item 根据协议文档实现设备通讯协议解析, 部署开源 MQTT 服务器 EMQX 维护设备连接
-  \item 使用 redis 作为缓存数据库，进行实时设备在线状态更新与查询，并通过 expire 指令动态设置设备
-命令延迟下发
+  \item 使用 redis 作为缓存数据库，进行实时设备在线状态更新与查询，并实现了设备命令延迟下发
   \item 云平台 Mysql 数据库设备数据模块增删改查，使用了 Mybatis 作为持久层框架
   \item 使用 SpringBoot 中 AOP 功能实现接口通信数据日志打印, 并通过自定义注解结合 AOP 实现接口
 权限控制
-  \item 通过 JWT 实现了云平台用户验证
+  \item 使用JWT技术实现了云平台用户验证
+  \item 带领项目团队参加并获得了\textbf{华为鲲鹏应用创新大赛浙江赛区总决赛二等奖}
 \end{itemize}
 
 % Reference Test
@@ -76,6 +76,7 @@
 %\bibliographystyle{IEEETran}
 %\bibliography{mycite}
 \end{document}
+
 
 
 
